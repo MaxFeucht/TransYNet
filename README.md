@@ -3,7 +3,7 @@ Novel architecture for segmentation of Optical Coherence Tomopgrahpy images
 
 The present repository contains the code for the **TransYNet**, a novel architecture developed to segment Optical Coherence Tomography (OCT) scans. It combines the capabilities of two different models, the Y-Net and the TransUNet, that are both based on the standard U-Net architecture. The architecture looks as follows: 
 
-![TransYNet architecture](/images/TransYNet_architecture.jpg "TransYNet architecture")
+![TransYNet architecture](TransYNet_architecture.png "TransYNet architecture")
 
 ### Spatial Encoder
 The  encoding branch consists of one 7*7 convolution (stride 2) and 3 encoding blocks, each being composed of a downsampling convolution followed by a triple convolution (1x1 (stride 1), dilated 3x3 (stride 2), 1x1 (stride 1). The block’s output serves two purposes: it is (I) used as a skip-connection to the decoder branch, and (II) downsampled by max pooling (stride 2) before entering the next encoder block. At the bottom, called the bottleneck, the last encoder feature map is double convolved and the depth of the feature maps is doubled (channels * 16). 
