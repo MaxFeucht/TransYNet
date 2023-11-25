@@ -1,5 +1,5 @@
 # TransYNet
-#### A novel architecture for segmentation of Optical Coherence Tomopgrahpy images
+#### A novel architecture for segmentation of Optical Coherence Tomopgraphy images
 
 The present repository contains the code for the [**TransYNet**](/nets/transynet.py), a novel architecture developed to segment Optical Coherence Tomography (OCT) scans. It combines the capabilities of two different models, the [Y-Net](https://arxiv.org/abs/2204.07613) and the [TransUNet](https://arxiv.org/abs/2102.04306), that are both based on the standard U-Net architecture. The Y-net allows encoding of spectral features within OCT images, while the Transformer encoder allows to better capture global context in the images. The architecture looks as follows: 
 
