@@ -17,7 +17,7 @@ At the end of the encoding branch, image patches (of size 1x1) tokenized from th
 ### Decoder
 The decoder branch is divided into four blocks that consist of two 3x3 convolutional layers and ReLU functions. Before each block, the input is upsampled by a 2x2 convolution and combined with the skip-connection from the corresponding encoder blocks. In the last block, a 1x1 convolutional operation is added to create the output segmentation map.
 
-[TransYNet](/nets/transynet.py) is written in PyTorch. 
+TransYNet is written in PyTorch. 
 
 #### References: 
 
